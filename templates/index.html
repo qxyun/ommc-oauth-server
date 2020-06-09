@@ -1,0 +1,47 @@
+{% extends "common/base.html" %}
+{% block content %}
+<div class="container">
+    <!-- 内容头部 -->
+    <section class="content-header">
+      <h1>
+        用户列表
+        <small>所有用户信息</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="/">首 页</a></li>
+        <li class="active">用户列表</li>
+      </ol>
+    </section>
+
+    <!-- 内容主体 -->
+    <section class="content">
+      <!-- 头部 -->
+      <div class="callout callout-info">
+        <h4>超级管理员</h4>
+        <p>超级管理员(admin)拥有绝对的控制权, 不能删除且用户信息在初始化时设置。</p>
+      </div>
+
+      <!-- 主体 -->
+      <div class="box box-default">
+        <div class="box-body">
+          <div id="myTabContent" class="tab-content">
+                <div class="active in" id="one">
+                    <div class="widget-body no-padding">
+                        <div id="toolbar" class="toolbar">
+                            {% if user.is_superuser %}
+                               {{ build_toolbar("refresh", "add") }}
+                            {% else %}
+                               {{ build_toolbar("refresh")}}
+                            {% endif %}
+                        </div>
+                        <table id="table" class="table table-striped table-bordered table-hover" width="100%">
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{
+  "name": "ommc-oauth-server",
+  "version": "1.0.3",
+  "description": "ommc-oauth-server",
+  "main": "app.build.js",
+  "scripts": {
+    "package": "node build/r.js -o build/app.build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qxyun/ommc-oauth-server.git"
+  },
+  "author": "zp"
+}

@@ -1,2 +1,5 @@
 # ommc-oauth-server
-Python Flask Building OAuth2.0 service.
+由Python Flask构建的Oauth2.0服务.
+### 截图
+![image](image/login.png)
+![image](image/home.png)

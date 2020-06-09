@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>用户登录</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="/static/css/login.min.css">
+</head>
+
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="">用户登录</a>
+  </div>
+  <div class="login-box-body">
+    <p class="login-box-msg">如此简单的运行</p>
+    <div>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" id="username" placeholder="用户名">
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" id="password" placeholder="密 码">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <p class="login-box-msg text-red" id="errorP" style="display: none"></p>
+
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> 记住密码
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="social-auth-links text-center">
+        <button id="loginSubmit" class="btn btn-block btn-facebook">登 录</button>
+    </div>
+    <a href="">忘记密码</a>
+  </div>
+</div>
+<script src="/static/js/require.min.js" data-main="/static/js/main.min.js"></script>
+</body>
+</html>
